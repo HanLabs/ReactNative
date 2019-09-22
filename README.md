@@ -16,6 +16,8 @@ https://academy.realm.io/kr/posts/react-native/
 
 ### Let's Set Environment
 
+ReactNative 는 iOS & Android 플랫폼 모두에서 JS 를 통해 개발되는 환경이기 때문에 Node.js 를 비롯한 다양한 설정과정이 필요하다.
+
 Let's install the `watchman` and `flow`.
 ```
 brew install watchman
@@ -39,7 +41,7 @@ nvm alias default node
 nvm 을 install 시도 시 몇 가지 직접 설정해주어야 하는 작업들이 있었다. <br>
 나는 CLI 로 zshell 을 사용중이므로, `~/.zshrc` 파일을 수정했다. <br>
 `[ -s "/Users/kksd0900/.nvm/nvm.sh" ] && source "/Users/kksd0900/.nvm/nvm.sh"` 을 추가했다. (경로는 각자 설정) <br>
-만약 이 source 를 추가하고도 nvm 이 실행되지 않는다면, $ `source $HOME/.nvm/nvm.sh` 을 커맨드라인에 직접 실행하면 된다. <br>
+만약 이 source 를 추가하고도 nvm 이 실행되지 않아서, `$ source $HOME/.nvm/nvm.sh` 을 커맨드라인에 직접 실행하니 된다. <br>
 
 설치가 성공적으로 진행되었다면 <br>
 > **$ nvm --version** <br>
@@ -52,3 +54,19 @@ nvm 을 install 시도 시 몇 가지 직접 설정해주어야 하는 작업들
 
 node 의 설치도 성공적.
 
+
+### Start RN Project
+
+프로젝트 생성 전에 npm 을 통해 RN 라이브러리를 설치한다. <br>
+`npm install -g react-native-cli` 
+
+패키지를 설치했다면, cli 명령어를 통해 Xcode 프로젝트를 생성한다. <br>
+`react-native init ReactNative` (근데 무슨 플젝 생성에 시간이 이리 오래걸리는건지;;)
+
+>  Run instructions for iOS: <br>
+>  • cd ReactNative && react-native run-ios <br>
+>    - or - <br>
+>  • Open ReactNative/ios/ReactNative.xcworkspace in Xcode or run "xed -b ios" <br>
+>  • Hit the Run button
+
+프로젝트 생성 성공!
