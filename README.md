@@ -21,6 +21,12 @@ Let's install the `watchman` and `flow`.
 brew install watchman
 brew install flow
 ```
+> brew 를 통해 위 모듈들을 설치하며 pre-version 인 OS X 로 인해 경고가 출력되었지만, 설치에 실패하지는 않았다.
+> 
+> **$ watchman --version** <br> 
+> 3.8.0 <br>
+> **$ flow --version** <br>
+> Flow, a static type checker for JavaScript, version 0.17.0
 
 And install `Node.js` with `nvm`.
 ```
