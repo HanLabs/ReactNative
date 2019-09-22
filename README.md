@@ -78,3 +78,21 @@ node 의 설치도 성공적.
 물론 Xcode 로는 켜지지 않는다.. WebStorm 을 정말 오랜만에 켜는것 까지는 OK.. 근데 WebStorm 에서 코드 인덴트가 다 깨지는데..?
 > 웹스톱의 `Swtich language level to JSX Harmony` 를 실행하니 빨간 줄이 다 사라졌다. <br> 
 > 근데 JS ECMA 6 에서 뭔가 문제가 발생하는 것 같은데.. 어쨋든 Xcode 상에서 App Run 은 문제 없이 동작한다.
+
+**!! Trouble Shooting with start an App** <br>
+
+* `$ react-native run-ios --verbose` 입력 시, iPhone X simulator 를 찾을 수 없다는 Alert 가 출력된다.
+> Xcode 를 13.0 으로 업데이트하며 iPhone X 모델의 시뮬레이터가 설치되지 않은 것으로 보인다. 시뮬 추가 후 정상 동작한다. 
+
+* 앱을 실행 시 Node Server 에 접속이 실패했다는 경고창이 출력된다. 
+> 시뮬레이터가 node server 에 접속하지 못하는 현상으로 보인다.  <br>
+
+`$ npm start` 를 통해 node server  를 실행해주어야 한다. <br>
+ 하지만 `error listen EADDRINUSE: address already in use :::8081.` 으로 이미 node port 가 사용 중이라는 메시지가 출력된다. <br>
+그러므로 `$ ps aux | grep node`  와 `kill -9 {PID}` 를 통해 process 를 죽인 후 npm start 를 입력했지만 또 다른 에러가 출력된다.
+이 에러를 자세히 확인하기 위해 `http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false` 에 접속해보니
+
+> Error: Duplicated files or mocks. Please check the console for more info <br>
+> ...
+
+과 같은 에러가 출력된다..
