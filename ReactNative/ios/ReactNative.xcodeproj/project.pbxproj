@@ -17,6 +17,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeTests.m */; };
 		337940C15895A76D5CE5E638 /* libPods-ReactNative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E643EC06FD4746F7A22657E /* libPods-ReactNative-tvOS.a */; };
+		4942873823378B63009EDE1F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4942873723378B63009EDE1F /* README.md */; };
 		7E6ED62B0DA911A9449183D3 /* libPods-ReactNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 304749927769F92D577C5AB5 /* libPods-ReactNative-tvOSTests.a */; };
 		824AAF100CFBFA11A2C1F2BC /* libPods-ReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3BDD8BD1EFA7DEEA980E58 /* libPods-ReactNative.a */; };
 		B9BC1280953AC3588381FF60 /* libPods-ReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB31A08EB61B0724CE7B0F70 /* libPods-ReactNativeTests.a */; };
@@ -57,6 +58,7 @@
 		45CBBCA0DEC4A943AF936307 /* Pods-ReactNative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNative-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNative-tvOS/Pods-ReactNative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		46A516DB3DFB5F5346AC78EE /* Pods-ReactNative-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNative-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNative-tvOSTests/Pods-ReactNative-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		4749D762A82A64975652D166 /* Pods-ReactNative-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNative-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNative-tvOS/Pods-ReactNative-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4942873723378B63009EDE1F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		727A07CD2B33D80D13E80924 /* Pods-ReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTests/Pods-ReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E643EC06FD4746F7A22657E /* libPods-ReactNative-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNative-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF1A5A97E8AD542E94289CC /* Pods-ReactNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNative-tvOSTests/Pods-ReactNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4942873723378B63009EDE1F /* README.md */,
 				13B07FAE1A68108700A75B9A /* ReactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeTests */,
@@ -194,7 +197,6 @@
 				F67BD67F9AAFE1A5C753C19A /* Pods-ReactNativeTests.debug.xcconfig */,
 				727A07CD2B33D80D13E80924 /* Pods-ReactNativeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +310,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4942873823378B63009EDE1F /* README.md in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);

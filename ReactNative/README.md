@@ -16,7 +16,7 @@ https://academy.realm.io/kr/posts/react-native/
 
 ### Let's Set Environment
 
-ReactNative 는 iOS & Android 플랫폼 모두에서 JS 를 통해 개발되는 환경이기 때문에 Node.js 를 비롯한 다양한 설정과정이 필요하다.
+ReactNative 는 iOS & Android 플랫폼 모두에서 JS 를 통해 개발되는 환경이기 때문에 Node.js 를 비롯한 귀찮은 설정 과정이 필요하다.
 
 Let's install the `watchman` and `flow`.
 ```
@@ -55,7 +55,7 @@ nvm 을 install 시도 시 몇 가지 직접 설정해주어야 하는 작업들
 node 의 설치도 성공적.
 
 
-### Start RN Project
+### Create RN Project
 
 프로젝트 생성 전에 npm 을 통해 RN 라이브러리를 설치한다. <br>
 `npm install -g react-native-cli` 
@@ -69,4 +69,12 @@ node 의 설치도 성공적.
 >  • Open ReactNative/ios/ReactNative.xcworkspace in Xcode or run "xed -b ios" <br>
 >  • Hit the Run button
 
-프로젝트 생성 성공!
+프로젝트 생성 성공! (아니, 잠깐만.. AppDelegate 가 ObjC 로 생성되는거 모야 ㅡㅡ)
+
+
+### Start Develop RN !
+
+생성된 프로젝트에서 `app.js` 와 `index.js` 파일을 실행한다.  <br>
+물론 Xcode 로는 켜지지 않는다.. WebStorm 을 정말 오랜만에 켜는것 까지는 OK.. 근데 WebStorm 에서 코드 인덴트가 다 깨지는데..?
+> 웹스톱의 `Swtich language level to JSX Harmony` 를 실행하니 빨간 줄이 다 사라졌다. <br> 
+> 근데 JS ECMA 6 에서 뭔가 문제가 발생하는 것 같은데.. 어쨋든 Xcode 상에서 App Run 은 문제 없이 동작한다.
