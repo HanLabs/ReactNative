@@ -93,6 +93,7 @@ node 의 설치도 성공적.
 이 에러를 자세히 확인하기 위해 `http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false` 에 접속해보니
 
 > Error: Duplicated files or mocks. Please check the console for more info <br>
+>   at setModule (/Users/kksd0900/Desktop/HanSJinLab/ReactNative-HanSJin/ReactNative/node_modules/jest-haste-map/build/index.js:620:17) <br>
 > ...
 
 과 같은 에러가 출력된다..
