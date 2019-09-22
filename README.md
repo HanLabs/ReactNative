@@ -47,7 +47,7 @@ nvm 을 install 시도 시 몇 가지 직접 설정해주어야 하는 작업들
 
 이 출력된다.
 
-> **$ node --version**
+> **$ node --version** <br>
 > v12.10.0
 
 node 의 설치도 성공적.
