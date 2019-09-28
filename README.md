@@ -91,6 +91,15 @@ node 의 설치도 성공적.
 
 프로젝트 생성 성공! (아니, 잠깐만.. AppDelegate 가 ObjC 로 생성되는거 모야 ㅡㅡ)
 
+### Clone RN Project
+
+프로젝트를 새로 생성하는 것이 아닌, clone 과 같이 당겨오는 경우는 `react-native init PROJECT` 명령어를 수행하지 않으므로, npm 설치부터 진행해주어야한다.
+이를 진행하지 않고 `pod install` 실행 시 
+
+> [!] Invalid `Podfile` file: cannot load such file -- /Users/user/Desktop/ReactNative/ReactNative/node_modules/@react-native-community/cli-platform-ios/native_modules.
+
+메시지가 출력된다. (node_modules 폴더가 생성되지 않았으므로)
+이 경우 `npm install` 을 실행하여 필요한 node package 들을 먼저 설치해주도록 한다. (중간에 `npm audit fix` 명령도 입력하래서 했다)
 
 ### Start Develop RN !
 
