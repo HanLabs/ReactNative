@@ -44,7 +44,6 @@ mkdir ~/.nvm
 
 Add the following to ~/.zshrc or your desired shell
 configuration file:
-(내 경우는 vi ~/.bashrc)
 
 ```
   export NVM_DIR="$HOME/.nvm"
@@ -59,9 +58,10 @@ nvm alias default node
 
 **!! Trouble Shooting during installation** <br>
 nvm 을 install 시도 시 몇 가지 직접 설정해주어야 하는 작업들이 있었다. <br>
-나는 CLI 로 zshell 을 사용중이므로, `~/.zshrc` 파일을 수정했다. <br>
+나는 CLI 로 zshell 을 사용중이므로, `~/.zshrc` (혹은 `~/.bashrc`) 파일을 수정했다. <br>
 `[ -s "/Users/kksd0900/.nvm/nvm.sh" ] && source "/Users/kksd0900/.nvm/nvm.sh"` 을 추가했다. (경로는 각자 설정) <br>
 만약 이 source 를 추가하고도 nvm 이 실행되지 않아서, `$ source $HOME/.nvm/nvm.sh` 을 커맨드라인에 직접 실행하니 된다. <br>
+다른 환경에서 설치 가이드를 따라해본 결과, 위 스크립트 소스들은 다소 차이가 있으 수 있으나 대략적인 방법은 동일하다. <br>
 
 설치가 성공적으로 진행되었다면 <br>
 > **$ nvm --version** <br>
