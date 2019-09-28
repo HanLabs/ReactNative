@@ -110,6 +110,8 @@ node 의 설치도 성공적.
 > 웹스톱의 `Swtich language level to JSX Harmony` 를 실행하니 빨간 줄이 다 사라졌다. <br> 
 > 근데 JS ECMA 6 에서 뭔가 문제가 발생하는 것 같은데.. 어쨋든 Xcode 상에서 App Run 은 문제 없이 동작한다.
 
+> 다른 환경에서 시도하니, 루트 디렉토르 자체를 WebStorm 의 프로젝트로 Open 해버리니 코드가 깨지는 문제는 해결되었다.
+
 **!! Trouble Shooting with start an App** <br>
 
 * `$ react-native run-ios --verbose` 입력 시, iPhone X simulator 를 찾을 수 없다는 Alert 가 출력된다.
@@ -120,11 +122,10 @@ node 의 설치도 성공적.
 
 `$ npm start` 를 통해 node server  를 실행해주어야 한다. <br>
  하지만 `error listen EADDRINUSE: address already in use :::8081.` 으로 이미 node port 가 사용 중이라는 메시지가 출력된다. <br>
-그러므로 `$ ps aux | grep node`  와 `kill -9 {PID}` 를 통해 process 를 죽인 후 npm start 를 입력했지만 또 다른 에러가 출력된다.
-이 에러를 자세히 확인하기 위해 `http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false` 에 접속해보니
+그러므로 `$ sudo lsof -i :8081`  와 `kill -9 {PID}` 를 통해 node 와 RN process 를 죽인 후 react-native start 를 다시 실행한다. <br>
+하지만 `http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false` 에서 아래 에러가 출력된다. <br>
 
 > Error: Duplicated files or mocks. Please check the console for more info <br>
 >   at setModule (/Users/kksd0900/Desktop/HanSJinLab/ReactNative-HanSJin/ReactNative/node_modules/jest-haste-map/build/index.js:620:17) <br>
 > ...
 
-과 같은 에러가 출력된다..
