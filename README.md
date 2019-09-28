@@ -120,9 +120,9 @@ node 의 설치도 성공적.
 * 앱을 실행 시 Node Server 에 접속이 실패했다는 경고창이 출력된다. 
 > 시뮬레이터가 node server 에 접속하지 못하는 현상으로 보인다.  <br>
 
-`$ npm start` 를 통해 node server  를 실행해주어야 한다. <br>
+`$ react-native start` 를 통해 node server  를 실행해주어야 한다. <br>
  하지만 `error listen EADDRINUSE: address already in use :::8081.` 으로 이미 node port 가 사용 중이라는 메시지가 출력된다. <br>
-그러므로 `$ sudo lsof -i :8081`  와 `kill -9 {PID}` 를 통해 node 와 RN process 를 죽인 후 react-native start 를 다시 실행한다. <br>
+그러므로 `$ sudo lsof -i :8081`  와 `kill -9 {PID}` 를 통해 node 와 RN process 를 죽인 후 `$ react-native start` 를 다시 실행한다. <br>
 하지만 `http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false` 에서 아래 에러가 출력된다. <br>
 
 > Error: Duplicated files or mocks. Please check the console for more info <br>
