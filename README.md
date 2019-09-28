@@ -100,6 +100,7 @@ node 의 설치도 성공적.
 
 메시지가 출력된다. (node_modules 폴더가 생성되지 않았으므로)
 이 경우 `npm install` 을 실행하여 필요한 node package 들을 먼저 설치해주도록 한다. (중간에 `npm audit fix` 명령도 입력하래서 했다)
+이 후 `pod install` 명령 동작도 OK. 앱의 실행도 OK.
 
 ### Start Develop RN !
 
