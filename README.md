@@ -1,5 +1,6 @@
 # ReactNative HanSJin
 Study the ReactNative for iOS.
+ReactNative 환경 구성과 과정 중 문제해결한 부분으 Note 하였음.
 
 ## References for RN
 https://academy.realm.io/kr/posts/react-native/
