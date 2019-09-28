@@ -33,6 +33,26 @@ brew install flow
 And install `Node.js` with `nvm`.
 ```
 brew install nvm
+```
+
+nvm 을 설치한 후 나오는 메시지를 따라해야한다.
+
+You should create NVM's working directory if it doesn't exist:
+```
+mkdir ~/.nvm
+```
+
+Add the following to ~/.zshrc or your desired shell
+configuration file:
+(내 경우는 vi ~/.bashrc)
+
+```
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+```
+
+```
 nvm install node
 nvm alias default node
 ```
